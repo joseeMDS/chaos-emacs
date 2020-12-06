@@ -9,6 +9,12 @@
   (define-key evil-insert-state-map (kbd "C-g") 'evil-normal-state)
   )
 
+(use-package evil-collection
+  :after evil
+  :config
+  (evil-collection-init))
+
+
 (use-package general)
 
 

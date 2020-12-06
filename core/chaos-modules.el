@@ -4,5 +4,8 @@
 (require 'chaos-org)
 (require 'chaos-ivy)
 (require 'chaos-treemacs)
+(require 'chaos-lsp)
+(require 'chaos-company)
+(require 'chaos-elixir)
 
 (provide 'chaos-modules)
