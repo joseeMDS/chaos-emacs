@@ -26,7 +26,7 @@
  '(custom-safe-themes
    '("9efb2d10bfb38fe7cd4586afb3e644d082cbcdb7435f3d1e8dd9413cbe5e61fc" default))
  '(package-selected-packages
-   '(evil-collection counsel-projectile projectile counsel ivy general use-package evil doom-themes all-the-icons)))
+   '(which-key dired evil-collection counsel-projectile projectile counsel ivy general use-package evil doom-themes all-the-icons)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

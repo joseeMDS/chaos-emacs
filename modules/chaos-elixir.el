@@ -11,14 +11,8 @@
 (use-package alchemist
   :hook (elixir-mode . alchemist-mode))
 
-
 (use-package exunit
   :hook (elixir-mode . exunit-mode))
-
-
-(use-package alchemist-company)
-
-
 
 (provide 'chaos-elixir)
   
