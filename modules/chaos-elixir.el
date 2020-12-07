@@ -2,7 +2,7 @@
 
 (use-package elixir-mode
   :hook
-  (elixir-mode . lsp-mode)
+  (elixir-mode . lsp)
   )
 
 (use-package flycheck-credo
