@@ -19,24 +19,24 @@
 ;;
 ;;; Code:
 
+(setq straight-recipes-gnu-elpa-use-mirror t)
 
-(setq package-archives '(("melpa" . "https://melpa.org/packages/")
-                         ("org" . "https://orgmode.org/elpa/")
-                         ("elpa" . "https://elpa.gnu.org/packages/")))
+(defvar bootstrap-version)
+(let ((bootstrap-file
+       (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+      (bootstrap-version 5))
+  (unless (file-exists-p bootstrap-file)
+    (with-current-buffer
+        (url-retrieve-synchronously
+         "https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el"
+         'silent 'inhibit-cookies)
+      (goto-char (point-max))
+      (eval-print-last-sexp)))
+  (load bootstrap-file nil 'nomessage))
 
-(package-initialize)
-(unless package-archive-contents
-  (package-refresh-contents))
 
-  ;; Initialize use-package on non-Linux platforms
-(unless (package-installed-p 'use-package)
-  (package-install 'use-package))
-
+(straight-use-package 'use-package)
 (require 'use-package)
-(setq use-package-always-ensure t)
-
-
-
 
 (provide 'chaos-packages)
 ;;; chaos-packages.el ends here

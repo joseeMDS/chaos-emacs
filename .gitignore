@@ -1,5 +1,6 @@
 *~
 *.elc
+.backup
 .cache
 auto-save-list
 recentf
@@ -26,3 +27,4 @@ tramp
 network-security.data
 transient/
 .lsp-session-*
+straight/

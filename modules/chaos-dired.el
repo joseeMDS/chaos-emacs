@@ -1,5 +1,5 @@
 (use-package dired
-  :ensure nil
+  :straight t
   :commands (dired dired-jump)
   :bind (("C-x C-j" . dired-jump))
   :custom ((dired-listing-switches "-agho --group-directories-first"))

@@ -9,12 +9,19 @@
 (setq visible-bell t) 
 
 (use-package doom-themes
+  :straight t
   :init
   (load-theme 'doom-material t))
 
-(use-package all-the-icons)
+(use-package all-the-icons
+  :straight t)
 
-(use-package doom-modeline :init  (doom-modeline-mode 1))
+(use-package doom-modeline :straight t :init  (doom-modeline-mode 1))
+
+
+(use-package rainbow-delimiters
+  :straight t
+  :hook (prog-mode . rainbow-delimiters-mode))
 
 
 (provide 'chaos-ui) 
