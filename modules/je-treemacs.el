@@ -1,5 +1,4 @@
   (use-package treemacs
-  :straight t
   :defer t
   :init
   (with-eval-after-load 'winum
@@ -70,32 +69,27 @@
         ("C-x t M-t" . treemacs-find-tag)))
 
 (use-package treemacs-evil
-  :straight t
   :after treemacs evil
   :ensure t)
 
 (use-package treemacs-projectile
-  :straight t
   :after treemacs projectile
   :ensure t)
 
 (use-package treemacs-icons-dired
-  :straight t
   :after treemacs dired
   :ensure t
   :config (treemacs-icons-dired-mode))
 
 (use-package treemacs-magit
-  :straight t
   :after treemacs magit
   :ensure t)
 
 (use-package treemacs-persp ;;treemacs-persective if you use perspective.el vs. persp-mode
-  :straight t
   :after treemacs persp-mode ;;or perspective vs. persp-mode
   :ensure t
   :config (treemacs-set-scope-type 'Perspectives))
 
 
 
-(provide 'chaos-treemacs)
+(provide 'je-treemacs)

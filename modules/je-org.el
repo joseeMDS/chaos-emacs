@@ -1,23 +1,20 @@
-(defun chaos/org-mode-visual-fill ()
+(defun je/org-mode-visual-fill ()
     (setq visual-fill-column-witdh 100
 	  visual-fill-column-center-text t)
     (visual-fill-column-mode 1))
 
 
 (use-package visual-fill-column
-  :straight t
-  :hook (org-mode . chaos/org-mode-visual-fill))
+  :hook (org-mode . je/org-mode-visual-fill))
 
 
 (use-package org
-  :straight t
-  :hook (org-mode . chaos/org-setup))
+  :hook (org-mode . je/org-setup))
 
 
 
 
 (use-package org-bullets
-  :straight t
   :after org
   :hook
   (org-mode . org-bullets-mode))
@@ -37,4 +34,4 @@
 
 
 
-(provide 'chaos-org)
+(provide 'je-org)

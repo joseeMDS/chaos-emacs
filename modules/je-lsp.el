@@ -10,4 +10,4 @@
 
 
 
-(provide 'chaos-lsp)
+(provide 'je-lsp)

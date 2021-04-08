@@ -10,4 +10,4 @@
 
 
 
-(provide 'chaos-pdf)
+(provide 'je-pdf)

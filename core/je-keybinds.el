@@ -1,5 +1,4 @@
 (use-package evil
-  :straight t
   :init
   (setq evil-want-integration t)
   (setq evil-want-keybinding nil)
@@ -12,23 +11,21 @@
 
 
 (use-package evil-collection
-  :straight t
   :after evil
   :config
   (evil-collection-init))
 
 
-(use-package general
-  :straight t)
+(use-package general)
 
-(general-create-definer chaos/leader-definer
+(general-create-definer je/leader-definer
   :states '(normal insert visual emacs)
   :prefix "SPC"
   :non-normal-prefix "C-SPC")
 
 
 ;; window managment keys
-(chaos/leader-definer
+(je/leader-definer
  "w" '(:ignore t :wk "window")
  "wl" 'evil-window-right 
  "wh" 'evil-window-left 
@@ -40,21 +37,21 @@
  )
 
 ;;files keybinding
-(chaos/leader-definer
+(je/leader-definer
   "f" '(:ignore t :wk "file")
   "ff" '(counsel-find-file :wk "Find file")
   "fs" '(save-buffer :wk "Save file")
   )
 
 ;;open keybinds
-(chaos/leader-definer
+(je/leader-definer
   "o" '(:ignore t :wk "open")
   )
 ;;help keybinds
 
-(chaos/leader-definer
+(je/leader-definer
   "h" '(:ignore t :wk "help")
   "hf" 'counsel-describe-function
   )
 
-(provide 'chaos-keybinds)
+(provide 'je-keybinds)

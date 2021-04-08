@@ -1,5 +1,4 @@
 (use-package ivy
-  :straight t
   :bind (("C-s" . swiper)
          :map ivy-minibuffer-map
          ("TAB" . ivy-alt-done)	
@@ -17,7 +16,6 @@
   (ivy-mode 1))
 
 (use-package counsel
-  :straight t
   :bind (("M-x" . counsel-M-x)
          ("C-M-j" . 'counsel-switch-buffer)
          ("C-x b" . counsel-ibuffer)
@@ -26,8 +24,7 @@
          ("C-r" . 'counsel-minibuffer-history)))
 
 (use-package counsel-projectile
-  :straight t
   :config (counsel-projectile-mode)
   )
 
-(provide 'chaos-ivy)
+(provide 'je-ivy)
