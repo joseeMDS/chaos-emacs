@@ -7,6 +7,7 @@
 (require 'je-company)
 (require 'je-elixir)
 (require 'je-which-key)
+(require 'je-undo-tree)
 
 
 (provide 'je-modules)

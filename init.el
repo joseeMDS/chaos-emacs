@@ -12,7 +12,7 @@
 (require 'je-modules)
 (require 'je-utils)
 
-(setq backup-directory-alist '(("" . ".backups")))
+(setq make-backup-files nil)
 
 
 
