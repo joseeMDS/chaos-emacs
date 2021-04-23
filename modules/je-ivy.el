@@ -27,4 +27,6 @@
   :config (counsel-projectile-mode)
   )
 
+(use-package lsp-ivy)
+
 (provide 'je-ivy)

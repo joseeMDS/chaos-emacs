@@ -52,6 +52,14 @@
 (je/leader-definer
   "h" '(:ignore t :wk "help")
   "hf" 'counsel-describe-function
+)
+
+;;LSP bindings
+
+(je/leader-definer
+  "g" '(:ignore t :wk "LSP")
+  "gh" 'lsp-ui-doc-show
   )
+
 
 (provide 'je-keybinds)

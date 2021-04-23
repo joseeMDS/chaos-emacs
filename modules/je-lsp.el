@@ -6,8 +6,4 @@
 
   (use-package lsp-ui)
 
-  (use-package lsp-ivy)
-
-
-
 (provide 'je-lsp)

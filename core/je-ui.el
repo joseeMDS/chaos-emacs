@@ -2,8 +2,7 @@
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
-
-(display-line-numbers-mode 1)
+(global-display-line-numbers-mode 1)
 (setq display-line-numbers-type 'relative)
 (defalias 'yes-or-no-p 'y-or-n-p)
 (setq ring-bell-function 'ignore)
