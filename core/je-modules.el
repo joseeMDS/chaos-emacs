@@ -7,6 +7,7 @@
 (require 'je-lsp)
 (require 'je-company)
 (require 'je-elixir)
+(require 'je-ocaml)
 (require 'je-which-key)
 (require 'je-undo-tree)
 
