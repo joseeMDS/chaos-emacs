@@ -15,5 +15,3 @@
   :hook (elixir-mode . exunit-mode))
 
 (provide 'je-elixir)
-  
-  

@@ -27,13 +27,13 @@
 ;; window managment keys
 (je/leader-definer
  "w" '(:ignore t :wk "window")
- "wl" 'evil-window-right 
- "wh" 'evil-window-left 
- "wk" 'evil-window-up 
- "wj" 'evil-window-down 
- "wv" 'evil-window-vsplit 
- "ws" 'evil-window-split 
- "wq" 'evil-window-delete 
+ "wl" 'evil-window-right
+ "wh" 'evil-window-left
+ "wk" 'evil-window-up
+ "wj" 'evil-window-down
+ "wv" 'evil-window-vsplit
+ "ws" 'evil-window-split
+ "wq" 'evil-window-delete
  )
 
 ;;files keybinding
