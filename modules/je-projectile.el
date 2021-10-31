@@ -6,6 +6,6 @@
   :init
   (when (file-directory-p "~/Code")
     (setq projectile-project-search-path '("~/Code")))
-  (setq projectile-switch-project-action #'projectile-dired))
+  (setq projectile-switch-project-action #'projectile-find-file))
 
 (provide 'je-projectile)

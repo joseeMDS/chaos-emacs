@@ -1,6 +1,8 @@
+(setq-default show-trailing-whitespace t)
+
 (defun je/open-config ()
     (interactive)
-    (counsel-find-file "~/.emacs.d")
+    (find-file "~/emacs-configs/jee-macs")
   )
 
 (provide 'je-utils)

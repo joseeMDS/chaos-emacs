@@ -21,7 +21,8 @@
 (general-create-definer je/leader-definer
   :states '(normal insert visual emacs)
   :prefix "SPC"
-  :non-normal-prefix "C-SPC")
+  :non-normal-prefix "C-c"
+  )
 
 
 ;; window managment keys
@@ -39,7 +40,7 @@
 ;;files keybinding
 (je/leader-definer
   "f" '(:ignore t :wk "file")
-  "ff" '(counsel-find-file :wk "Find file")
+  "ff" '(find-file :wk "Find file")
   "fs" '(save-buffer :wk "Save file")
   )
 
@@ -54,12 +55,45 @@
   "hf" 'counsel-describe-function
 )
 
-;;LSP bindings
+;;LSP util bindings
 
 (je/leader-definer
   "g" '(:ignore t :wk "LSP")
-  "gh" 'lsp-ui-doc-show
+  "gh" 'lsp-ui-doc-glance
   )
+
+;; Projectile keybindings
+(je/leader-definer
+  "p" '(:ignore t :wk "Project")
+  "pp" 'projectile-switch-project
+  "pf" 'projectile-find-file
+  "pk" 'projectile-kill-buffers
+  )
+
+
+;; Buffer keybindings
+(je/leader-definer
+  "b" '(:ignore t :wk "Buffer")
+  "bb" 'switch-to-buffer
+  "bc" 'clone-indirect-buffer
+  "b[" 'switch-to-prev-buffer
+  "b]" 'switch-to-next-buffer
+  "bk" 'kill-current-buffer
+  "bs" 'save-current-buffer
+  )
+
+
+;; Code keybindings
+
+(je/leader-definer
+  "c" '(:ignore t :wk "Code")
+  "cl" '(:ignore t :wk "LSP")
+  "cll" 'lsp
+  "cx" 'consult
+  )
+
+
+
 
 
 (provide 'je-keybinds)
