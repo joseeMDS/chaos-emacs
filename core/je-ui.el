@@ -14,7 +14,7 @@
 
 (use-package doom-themes
   :init
-  (load-theme 'doom-gruvbox t))
+  (load-theme 'doom-moonlight t))
 
 (use-package all-the-icons)
 

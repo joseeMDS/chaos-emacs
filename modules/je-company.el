@@ -2,9 +2,9 @@
   :after lsp-mode
   :hook (prog-mode . company-mode)
   :bind (:map company-active-map
-    ("<tab>" . company-complete-selection))
+         ("C-SPC" . company-complete-selection))
   (:map lsp-mode-map
-    ("<tab>" . company-indent-or-complete-common)))
+    ("C-SPC" . company-complete-common)))
 
 
 (provide 'je-company)
