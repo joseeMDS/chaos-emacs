@@ -1,4 +1,7 @@
-(use-package envrc)
+(use-package envrc
+  :init
+  (envrc-global-mode)
+  )
 
 
 (provide 'je-env)

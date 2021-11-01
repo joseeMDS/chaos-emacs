@@ -5,10 +5,14 @@
 (require 'je-treemacs)
 (require 'je-lsp)
 (require 'je-company)
-(require 'je-elixir)
-(require 'je-ocaml)
 (require 'je-which-key)
 (require 'je-undo-tree)
+
+
+;; languages
+(require 'je-elixir)
+(require 'je-ocaml)
+(require 'je-haskell)
 
 
 (provide 'je-modules)
