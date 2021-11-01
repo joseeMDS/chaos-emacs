@@ -2,7 +2,12 @@
 
 (defun je/open-config ()
     (interactive)
-    (find-file "~/emacs-configs/jee-macs")
+    (projectile-find-file "~/emacs-configs/jee-macs")
   )
+
+(defun je/open-zshrc ()
+  (interactive)
+  (evil-edit "~/.zshrc")
+ )
 
 (provide 'je-utils)
