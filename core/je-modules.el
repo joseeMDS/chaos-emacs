@@ -7,6 +7,7 @@
 (require 'je-company)
 (require 'je-which-key)
 (require 'je-undo-tree)
+(require 'je-dashboard)
 
 
 ;; languages

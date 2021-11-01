@@ -17,12 +17,6 @@
 
 (add-hook 'after-init-hook (lambda () (message (emacs-init-time))))
 
-(use-package dashboard
-  :ensure t
-  :config
-  (setq dashboard-center-content t)
-  (dashboard-setup-startup-hook))
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
