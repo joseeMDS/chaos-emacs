@@ -14,6 +14,7 @@
 (require 'je-elixir)
 (require 'je-ocaml)
 (require 'je-haskell)
+(require 'je-rust)
 
 
 (provide 'je-modules)
