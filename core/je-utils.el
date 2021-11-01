@@ -1,4 +1,4 @@
-(setq-default show-trailing-whitespace t)
+(add-hook 'prog-mode-hook (lambda () (setq show-trailing-whitespace t)))
 
 (defun je/open-config ()
     (interactive)
