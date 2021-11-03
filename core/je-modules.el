@@ -15,6 +15,7 @@
 (require 'je-ocaml)
 (require 'je-haskell)
 (require 'je-rust)
+(require 'je-nix)
 
 
 (provide 'je-modules)
