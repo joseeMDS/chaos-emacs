@@ -16,6 +16,7 @@
 (require 'je-haskell)
 (require 'je-rust)
 (require 'je-nix)
+(require 'je-prolog)
 
 
 (provide 'je-modules)
